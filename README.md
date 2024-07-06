@@ -2,59 +2,70 @@
 
 This repository contains the source code for a decentralized voting application built on the Ethereum blockchain using Solidity smart contracts. The application provides a secure, transparent, and tamper-proof platform for conducting various types of voting processes.
 
-## Features:
+## Features
 
 **Owner Management:**
-  - Assign an owner who has special privileges, such as adding candidates and managing the voting process.
+
+- Assign an owner who has special privileges, such as adding candidates and managing the voting process.
 
 **Candidate Management:**
-  - Add, retrieve, and manage details of candidates participating in the voting process.
+
+- Add, retrieve, and manage details of candidates participating in the voting process.
 
 **Voting Mechanism:**
-  - Allow registered users to cast votes for their preferred candidates.
-  - Ensure that each voter can vote only once and validate the candidate ID before casting a vote.
+
+- Allow registered users to cast votes for their preferred candidates.
+- Ensure that each voter can vote only once and validate the candidate ID before casting a vote.
 
 **Result Viewing:**
-  - Retrieve and display the details of all candidates, including their ID, name, and vote count.
-  - View the details of a specific candidate.
 
-## Tools:
+- Retrieve and display the details of all candidates, including their ID, name, and vote count.
+- View the details of a specific candidate.
+
+## Tools
 
 **Remix Ethereum IDE:** [remix.ethereum.org](https://remix.ethereum.org)
-  - A web-based integrated development environment (IDE) for writing, testing, and deploying Ethereum smart contracts.
+
+- A web-based integrated development environment (IDE) for writing, testing, and deploying Ethereum smart contracts.
 
 **MetaMask:** [metamask.io](https://metamask.io)
-  - A browser extension that allows users to interact with the Ethereum blockchain and securely manage Ethereum accounts and transactions.
+
+- A browser extension that allows users to interact with the Ethereum blockchain and securely manage Ethereum accounts and transactions.
 
 **Ganache:** [trufflesuite.com/ganache](https://www.trufflesuite.com/ganache)
-  - A personal blockchain for Ethereum development that allows developers to deploy contracts, develop, and test their applications in a safe and deterministic environment.
+
+- A personal blockchain for Ethereum development that allows developers to deploy contracts, develop, and test their applications in a safe and deterministic environment.
 
 ## Setup Environment
 
 **MetaMask:**
-  - Go to the [MetaMask website](https://metamask.io/) and follow the instructions to install MetaMask for your browser.
-  - Create a new wallet or import an existing one.
-  - Connect MetaMask to your local Ganache network.
+
+- Go to the [MetaMask website](https://metamask.io/) and follow the instructions to install MetaMask for your browser.
+- Create a new wallet or import an existing one.
+- Connect MetaMask to your local Ganache network.
 
 **Remix Ethereum:**
-  - Open [Remix Ethereum IDE](https://remix.ethereum.org/) in your browser.
+
+- Open [Remix Ethereum IDE](https://remix.ethereum.org/) in your browser.
 
 **Connecting Ganache to MetaMask:**
-  - Open Ganache and create a new workspace.
-  - Copy the RPC server URL from Ganache (e.g., `http://127.0.0.1:7545`).
-  - In MetaMask, click on the network dropdown and select "Add Network."
-  - Fill in the network details:
-    - Network Name: Ganache
-    - New RPC URL: *[Paste the URL from Ganache]*
-    - Chain ID: 1337 (default for Ganache)
-    - Currency Symbol: ETH
-  - Save and connect to the new network.
+
+- Open Ganache and create a new workspace.
+- Copy the RPC server URL from Ganache (e.g., `http://127.0.0.1:7545`).
+- In MetaMask, click on the network dropdown and select "Add Network."
+- Fill in the network details:
+  - Network Name: Ganache
+  - New RPC URL: *[Paste the URL from Ganache]*
+  - Chain ID: 1337 (default for Ganache)
+  - Currency Symbol: ETH
+- Save and connect to the new network.
 
 **Connect MetaMask to Remix:**
-  - In Remix IDE, click on the `Settings` tab.
-  - Under `Plugin`, select `Solidity Compiler`.
-  - Scroll down to `Environment` and select `Injected Web3`.
-  - MetaMask will prompt you to connect your wallet. Confirm the connection.
+
+- In Remix IDE, click on the `Settings` tab.
+- Under `Plugin`, select `Solidity Compiler`.
+- Scroll down to `Environment` and select `Injected Web3`.
+- MetaMask will prompt you to connect your wallet. Confirm the connection.
 
 ## Deploy Contract
 
